@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  
+  <style>
+    *{
+      margin: 0%;
+      padding: 0%;
+      box-sizing: border-box;
+    }
+
+    body{
+      background-color: hsl(0, 0%, 95%);
+      font-size:15px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    main{
+      
+      
+      margin-top:20vh;
+      width: 50%;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      border:none;
+    }
+    .sedans-block{
+      padding: 4%;
+      border-radius: 10px 0 0 10px;
+      background-color: hsl(31, 77%, 52%);
+      height: 60vh;
+      width: 35%;
+    }
+    .suv-block{
+      padding: 4%;
+      background-color: hsl(184, 100%, 22%);
+      height: 60vh;
+      width: 35%;
+    }
+    .luxury-block{
+      padding: 4%;
+      border-radius: 0 10px 10px 0;
+      background-color: hsl(179, 100%, 13%);
+      height: 60vh;
+      width: 35%;      
+    }
+    h1{
+      color: hsl(0, 0%, 95%);
+      font-size:2em;
+      margin: 20px 0 10px 0;
+    } 
+    p{
+      margin-top: 25px;
+      color: hsla(0, 0%, 100%, 0.75);
+      margin-bottom: 70px;
+    }
+    
+    button{
+      background-color: hsl(0, 0%, 95%);
+      cursor: pointer;
+      width: 60%;
+      padding: 5%;
+      border-radius: 20px;
+      border:none;
+    }
+
+    .sedans-block button{
+      color: hsl(31, 77%, 52%);
+    }
+
+    .suv-block button{
+      color: hsl(184, 100%, 22%);
+    }
+    
+    .luxury-block button{
+      color: hsl(179, 100%, 13%);
+    }
+
+    footer{
+      margin-top: 50px;
+    }
+
+    @media screen and (max-width:375px){
+      main{
+        width: 100%;
+        
+        margin-top:0;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        
+      }
+
+      .suv-block, .luxury-block, .sedans-block{
+        width: 70%;
+        height: 36vh;
+      }
+
+      p{
+        margin-top:10px;
+        margin-bottom: 15px;
+      }
+
+
+      h1{
+        font-size: 1.3em;
+        margin-bottom: 8px;
+      }
+      .luxury-block{
+        border-radius:0 0 10px 10px;
+      }
+      .sedans-block{
+        border-radius:10px 10px 0 0;
+      }
+    }
+
+
+    @media screen and (min-width:376px) and (max-width:973px){
+    main{
+        width: 100%;
+        display: flex;
+        margin-top:2vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        
+        
+      }
+    
+      .suv-block, .luxury-block, .sedans-block{
+        width: 70%;
+        height: 30vh;
+      }
+
+      p{
+        margin-top:10px;
+        margin-bottom: 15px;
+      }
+
+
+      h1{
+        font-size: 1.5em;
+        margin-bottom: 8px;
+      }
+
+      .luxury-block{
+        border-radius:0 0 10px 10px;
+      }
+      .sedans-block{
+        border-radius:10px 10px 0 0;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <main>
+    <div class="sedans-block">
+      <img src="images/icon-sedans.svg" alt="image sedan">
+      <h1>SEDANS</h1>
+      <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+    or on your next road trip.</p>
+      <button>Learn more</button>
+    </div>
+
+    <div class="suv-block">
+      <img src="images/icon-suvs.svg" alt="icon suv">
+      <h1>SUVS</h1>
+      <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+        and off-road adventures.</p>
+      <button>Learn more</button>
+    </div>
+
+    <div class="luxury-block">
+      <img src="images/icon-luxury.svg" alt="luxury icon">
+      <h1>LUXURY</h1>
+      <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+    rental and arrive in style.</p>
+      <button>Learn more</button>
+    </div>
+
+  </main>
+
+  
+</body>
+<footer>
+
+</footer>
+</html>
